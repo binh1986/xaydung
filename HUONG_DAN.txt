@@ -1,0 +1,51 @@
+WEBSITE DƯƠNG HOÀNG — BẢN ĐƠN GIẢN, DỄ THAY ẢNH
+
+1. MỞ WEBSITE
+Giải nén. Mở index.html trong thư mục này, hoặc mở toàn bộ thư mục bằng VS Code.
+Không cần WordPress, PHP, npm hoặc cơ sở dữ liệu.
+
+2. THAY BANNER
+Mở thư mục images. Thay banner.jpg bằng ảnh JPEG mới đúng tên.
+Lưu rồi nhấn Ctrl+F5 trong trình duyệt. Không đổi JPG thành PNG bằng cách đổi tên.
+Banner nay là ảnh trực tiếp trong index.html:
+<img class="banner-image" src="images/banner.jpg" alt="Hình ảnh giới thiệu Dương Hoàng">
+Không có lớp phủ màu, không có biến --hero và không cắt ảnh.
+Chữ tiêu đề nằm bên dưới ảnh để dễ đọc. Muốn banner thấp, dùng ảnh ngang 1920 x 600 px.
+Không viết /images/banner.jpg hoặc images/banner1 thiếu đuôi.
+Muốn dùng tên khác, sửa src đúng tên đầy đủ, ví dụ images/banner-moi.png.
+Các trang con dùng tiêu đề chữ đơn giản, không có banner ảnh riêng.
+
+3. THAY LOGO VÀ CÁC ẢNH KHÁC
+images/logo.png: logo.
+images/gioi-thieu.jpg: ảnh giới thiệu.
+images/phong-thi-nghiem.jpg: ảnh phòng thí nghiệm.
+images/hien-truong.jpg: ảnh hiện trường.
+Thay đúng tên/định dạng, ảnh mới tự hiển thị ở những nơi dùng chung tệp.
+Logo hiển thị theo .company-logo trong css/style.css.
+Các ảnh kèm theo là minh họa; sau khi thay ảnh thật, sửa chú thích tương ứng.
+
+4. SỬA NỘI DUNG
+HTML là nội dung; css/style.css là màu, cỡ chữ và bố cục; js/main.js là menu và tìm kiếm.
+Mã được xuống dòng và ghi chú tiếng Việt. Tìm chữ cần sửa bằng Ctrl+F.
+index.html: trang chủ; gioi-thieu.html: giới thiệu; nang-luc.html: năng lực;
+cong-bo.html: công bố; tin-tuc.html: tin tức; lien-he.html: liên hệ.
+Đầu trang và chân trang có trong từng HTML. Khi đổi menu/địa chỉ, sửa các trang liên quan.
+
+5. SỬA PDF
+Thay documents/cong-bo-nang-luc.pdf cùng tên. Nếu đổi tên, sửa href trong các HTML có liên kết.
+Nếu là văn bản mới, nhớ sửa số/ngày công bố và nội dung liên quan.
+
+6. XỬ LÝ ẢNH KHÔNG HIỆN
+- Kiểm tra đang sửa đúng thư mục website đang mở.
+- Kiểm tra tên, chữ hoa/thường và đuôi ảnh thật; bật hiển thị phần mở rộng trong Windows.
+- Ảnh tải từ web có thể là WebP/AVIF; nên xuất thật thành JPEG trước khi thay banner.jpg.
+- Nhấn Ctrl+F5. Mở trực tiếp images/banner.jpg để kiểm tra ảnh có đọc được không.
+- Không dùng dấu / ở đầu đường dẫn nếu website đang chạy trong thư mục con hoặc mở bằng file.
+
+7. ĐƯA LÊN HOSTING
+Tải nội dung thư mục này vào thư mục web, thường public_html. Giữ cấu trúc css/js/images/documents.
+Đây là HTML tĩnh, đăng tin bằng sửa/tạo HTML, không có trang quản trị WordPress.
+
+8. KIỂM TRA
+Đã kiểm tra ảnh, PDF, liên kết tệp, cú pháp JavaScript và loại bỏ lớp phủ/biến banner.
+Chưa kiểm tra trực quan đầy đủ bằng trình duyệt tại môi trường xuất tệp.

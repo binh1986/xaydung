@@ -1,0 +1,178 @@
+<!--
+    WEBSITE DƯƠNG HOÀNG - MÃ HTML CÓ GHI CHÚ
+    File: tin-tuc.html
+    Cách đọc: HTML = nội dung; CSS = hình thức; JavaScript = thao tác.
+    Các dòng ghi chú này không xuất hiện trong nội dung website.
+    Sửa bản sao trước; lưu bằng UTF-8 để giữ đúng tiếng Việt.
+-->
+<!doctype html>
+<html lang="vi">
+
+    <!-- PHẦN KHAI BÁO: tiêu đề tab, bảng mã tiếng Việt, CSS và hiển thị trên điện thoại. -->
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Thông tin & hoạt động — Dương Hoàng
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body >
+        <a class="skip" href="#main">
+            Đến nội dung chính
+        </a>
+
+        <!-- ĐẦU TRANG: logo, tên công ty, menu và nút liên hệ. -->
+        <header class="header">
+            <a class="brand" href="index.html">
+
+                <!-- ẢNH: src = vị trí file; alt = mô tả khi ảnh không tải được. Giữ đúng tên và đuôi file. -->
+                <img class="company-logo" src="images/logo.png" alt="Logo Dương Hoàng">
+                <span>
+                    DƯƠNG HOÀNG
+                    <small>
+                        CONSTRUCTION · MATERIALS TESTING
+                    </small>
+                </span>
+            </a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
+                ☰
+                <span>
+                    Menu
+                </span>
+            </button>
+
+            <!-- MENU ĐIỀU HƯỚNG: sửa chữ trong thẻ a và đường dẫn tại href. -->
+            <nav id="navigation" aria-label="Menu chính">
+                <ul class="menu">
+                    <li>
+                        <a href="gioi-thieu.html">
+                            Tổng quan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nang-luc.html">
+                            Năng lực
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cong-bo.html">
+                            Công bố thông tin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tin-tuc.html" aria-current="page">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lien-he.html">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header-contact" href="index.html">
+                Liên hệ ↗
+            </a>
+        </header>
+
+        <!-- NỘI DUNG RIÊNG CỦA TRANG: phần anh thường chỉnh sửa nhất. -->
+        <main id="main">
+            <div class="page-banner">
+                <h1>
+                    Thông tin & hoạt động
+                </h1>
+                <p>
+                    <a href="index.html">
+                        Trang chủ
+                    </a>
+                    / Thông tin & hoạt động
+                </p>
+            </div>
+
+            <!-- TIN TỨC: mỗi article.news-item là một tin. Thêm tin bằng cách sao chép khối này. -->
+            <section id="tin-tuc" class="section news">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">
+                            04 / THÔNG TIN & HOẠT ĐỘNG
+                        </p>
+                        <h2>
+                            Cập nhật từ Dương Hoàng.
+                        </h2>
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <article class="news-item">
+                        <p class="eyebrow">
+                            06/10/2026 · CÔNG BỐ THÔNG TIN
+                        </p>
+                        <h3>
+                            <a href="documents/cong-bo-nang-luc.pdf" target="_blank" rel="noopener">
+                                Công bố năng lực thí nghiệm chuyên ngành xây dựng ↗
+                            </a>
+                        </h3>
+                        <p>
+                            Danh mục chỉ tiêu, thiết bị và nhân sự theo bản công bố 02/2026/TCB-DH.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- CHÂN TRANG: địa chỉ, điện thoại, email. Khi đổi cần sửa trên các trang HTML khác. -->
+        <footer id="lien-he">
+            <div class="footer-grid">
+                <div>
+                    <p class="eyebrow">
+                        KẾT NỐI VỚI CHÚNG TÔI
+                    </p>
+                    <h2>
+                        Cùng xây dựng
+                        <br>
+                        nền tảng chất lượng.
+                    </h2>
+                    <a class="text-link" href="mailto:Ctyxdduonghoang@gmail.com">
+                        Gửi email trao đổi ↗
+                    </a>
+                </div>
+                <div>
+                    <h3>
+                        Công ty TNHH XD Dương Hoàng
+                    </h3>
+                    <p>
+                        Số 73 Vạn Xuân, Phường Buôn Ma Thuột, Tỉnh Đắk Lắk
+                    </p>
+                    <p>
+                        <a href="tel:0857490917">
+                            0857490917
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:Ctyxdduonghoang@gmail.com">
+                            Ctyxdduonghoang@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        Mã số doanh nghiệp: 6001816017
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Dương Hoàng.
+                <a href="cong-bo.html">
+                    Thông tin công bố
+                </a>
+                <a href="index.html">
+                    Về đầu trang ↑
+                </a>
+            </div>
+        </footer>
+
+        <!-- NẠP JAVASCRIPT: đặt cuối trang để HTML được đọc trước. -->
+        <script src="js/main.js">
+        </script>
+    </body>
+</html>
