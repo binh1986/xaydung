@@ -82,8 +82,13 @@ button, input {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px 5%;
+    padding: 20px 2%;
     border-bottom: 1px solid #dde4e8;
+
+    position: sticky;   /* Giữ Header khi cuộn */
+    top: 0;             /* Cố định ở phía trên */
+    z-index: 1000;      /* Hiển thị trên các nội dung khác */
+    background: #fff;   /* Nền trắng */
 }
 .brand {
     display: flex;
@@ -91,6 +96,8 @@ button, input {
     gap: 12px;
     font-weight: bold;
     color: #174566;
+    margin-left: 50px;
+    justify-self: start;
 }
 .brand small {
     display: block;
@@ -98,8 +105,8 @@ button, input {
     letter-spacing: 1px;
 }
 .company-logo {
-    width: 65px;
-    height: 55px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
 }
 .menu {
@@ -109,8 +116,9 @@ button, input {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
 }
+
 .menu-toggle {
     display: none;
 }
@@ -390,4 +398,18 @@ footer {
     html {
         scroll-behavior: auto;
     }
+}
+
+@media screen and (min-width: 901px){
+    .brand {
+    justify-self: start;
+    margin-left: 200px; /* Dịch logo sang phải 50px */
+}
+#navigation {
+    justify-self: center;
+    position: relative;
+    left: 200px;       /* Dịch menu sang phải */
+    margin-left: 0;
+    transform: none;
+}
 }
